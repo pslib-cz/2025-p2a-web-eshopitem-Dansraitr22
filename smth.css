@@ -7,13 +7,14 @@
 .galerie{
     display: grid;
     grid-template-columns: repeat(auto-fit ,minmax(80px, 260px));
-    gap: 0.5em;
+        gap: 0.5em;
 
 }
 .item{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows:500px auto;
+    grid-template-rows: subgrid;
+    grid-row: span 7;
     gap: 0.5em;
 
 }
@@ -68,4 +69,15 @@ font-weight: normal;
     height: 8px;
     background: green;
     border-radius: 50%;
+}
+.other{
+display: flex;
+gap: 1em;
+}
+.img--other{
+height: 60px;
+}
+.img__bonus{
+    border: solid 1px black;
+    background-color: red;
 }
